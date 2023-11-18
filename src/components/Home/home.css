@@ -50,7 +50,6 @@
 }
 
 .landingpage h1 {
-  font-size: initial;
   font-size: 6em;
   animation-name: fade;
   animation-duration: 4s;
@@ -95,5 +94,30 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* ---------- Media --------------- */
+
+@media (max-width: 640px) {
+  .landingpage {
+    justify-content: center;
+  }
+  .landingpage .home-text {
+    justify-content: center;
+    /* gap: 50px; */
+  }
+  .landingpage h1 {
+    font-size: 4em;
+  }
+
+  .landingpage p {
+    font-size: 1.5em;
+    margin-top: 50px;
+    line-height: 50px;
+  }
+
+  .landingpage .home-btn {
+    font-size: 1.8em;
   }
 }

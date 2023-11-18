@@ -26,7 +26,8 @@ const Home = () => {
             {t(
               translationKey["Improving land resources, use and productivity"]
             )}
-            <br />
+          </p>
+          <p>
             {t(
               translationKey["Optimization of mineral resources and their use"]
             )}
