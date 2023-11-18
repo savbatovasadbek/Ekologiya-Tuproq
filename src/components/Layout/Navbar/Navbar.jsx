@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { Context } from "../../../store/store";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Button } from "../../ui/button";
-import { translationKey } from "../../../translation/translationKey/translationKey";
 import { useTranslation } from "react-i18next";
+import logo from "../../../assets/images/logo.png";
 
 const Navbar = () => {
   const { orderList } = useContext(Context);
@@ -15,27 +15,33 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" bg-transparent text-white border-b-2 border-white absolute top-0 left-0 w-full opacity-100 z-10">
+    <div className=" bg-transparent py-2 text-white border-b-2 border-white absolute top-0 left-0 w-full opacity-100 z-10">
       <div className="container  flex items-center justify-between">
-        <div className="flex items-center gap-5 py-4 ">
-          {orderList?.map((_, idx) => {
+        <div className="">
+          <NavLink to="/" className="w-[32px] h-[32px]">
+            <img
+              src={logo}
+              alt="logo"
+              loading="lazy"
+              className="w-[64px] h-[64px]"
+            />
+          </NavLink>
+        </div>
+        <div className="flex items-center gap-7 py-4 ">
+          {orderList?.map((link, idx) => {
             return (
               <div key={idx}>
-                <Link to={_}>{_}</Link>
+                <Link className="text-lg" to={link}>
+                  {t(link)}
+                </Link>
               </div>
             );
           })}
         </div>
-        <div>
-          <div>
-            <h1>{t(translationKey["Welcome to React"])}</h1>
-          </div>
-          <Button onClick={() => changeLanguage("en")}>En</Button>
-          <Button onClick={() => changeLanguage("ru")}>ru</Button>
+        <div className="flex items-center gap-3">
+          <Button onClick={() => changeLanguage("en")}>EN</Button>
+          <Button onClick={() => changeLanguage("ru")}>RU</Button>
           <Button onClick={() => changeLanguage("uz")}>UZ</Button>
-          <div className="">
-            <Link to="/order">Order</Link>
-          </div>
         </div>
       </div>
     </div>

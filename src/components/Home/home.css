@@ -3,6 +3,10 @@
   src: url("../../assets/fonts/Merianda.ttf") format("woff2");
 }
 
+* {
+  font-family: "Merianda";
+}
+
 .landingpage {
   color: white;
   width: 100%;
@@ -14,6 +18,7 @@
   position: relative;
   transition: 0.5s;
   font-family: "Merianda";
+  text-align: center;
 }
 
 .landingpage .video-bg {
@@ -54,6 +59,8 @@
 .landingpage p {
   justify-self: flex-end;
   font-size: 2em;
+  animation-name: anime_text;
+  animation-duration: 4s;
 }
 
 .landingpage .home-btn {
@@ -75,6 +82,16 @@
   0% {
     opacity: 0;
     margin-left: 3em;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anime_text {
+  0% {
+    opacity: 0;
+    margin-right: 3em;
   }
   100% {
     opacity: 1;

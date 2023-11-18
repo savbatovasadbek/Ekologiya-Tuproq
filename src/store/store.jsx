@@ -6,7 +6,7 @@ import { useReducer, createContext } from "react";
 export const Context = createContext(null);
 
 const initialState = {
-  orderList: ["Home", "Order", "Blog", "Contact us"],
+  orderList: ["Presentation", "Test", "Crossword", "Assignments"],
 };
 
 export const TodoContextProvider = ({ children }) => {
