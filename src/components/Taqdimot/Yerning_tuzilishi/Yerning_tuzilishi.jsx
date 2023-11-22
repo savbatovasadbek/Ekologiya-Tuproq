@@ -1,5 +1,3 @@
-import the_internal_structure from "../../../assets/images/Yerning_tuzilishi/the_internal_structure.jpg";
-
 const Yerning_tuzilishi = () => {
   return (
     <div className="bg-black w-full h-[100vh] pt-[100px] text-white">
@@ -8,7 +6,7 @@ const Yerning_tuzilishi = () => {
           <div className="">
             <img
               className="w-[500px]"
-              src={the_internal_structure}
+              src="../../../assets/images/Yerning_tuzilishi/the_internal_structure.jpg"
               alt="the_internal_structure"
               loading="lazy"
             />
