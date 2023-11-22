@@ -5,6 +5,14 @@ import { Button } from "../../ui/button";
 import { useTranslation } from "react-i18next";
 import logo from "../../../assets/images/logo.png";
 import { CiMenuFries } from "react-icons/ci";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Navbar = () => {
   const { orderList } = useContext(Context);
@@ -28,7 +36,7 @@ const Navbar = () => {
             />
           </NavLink>
         </div>
-        <div className="flex items-center gap-7 py-4  max-sm:hidden">
+        <div className="flex items-center gap-7 py-4 max-sm:hidden">
           {orderList?.map((link, idx) => {
             return (
               <div key={idx}>
@@ -45,9 +53,22 @@ const Navbar = () => {
           <Button onClick={() => changeLanguage("uz")}>UZ</Button>
         </div>
         <div className="hidden max-sm:inline-block">
-          <a href="#1">
-            <CiMenuFries size="36px" />
-          </a>
+          <Sheet>
+            <SheetTrigger>
+              <CiMenuFries size={20} />
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>
+                  <NavLink to="/">Are you sure absolutely sure?</NavLink>
+                </SheetTitle>
+                <SheetDescription>
+                  This action cannot be undone. This will permanently delete
+                  your account and remove your data from our servers.
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </div>
