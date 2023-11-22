@@ -8,6 +8,7 @@ import { RiFullscreenFill } from "react-icons/ri";
 import BgVideo from "../../assets/video/bg.mp4";
 
 import "./home.css";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -34,7 +35,12 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="home-btn">{t(translationKey["Start"])}</div>
+      <NavLink
+        to={`/${t(translationKey["Presentation"])}`}
+        className="home-btn"
+      >
+        {t(translationKey["Start"])}
+      </NavLink>
       <div className="absolute right-10 bottom-5 flex items-center gap-10">
         <button onClick={() => setShowFullScreen(!showFullScreen)}>
           {!showFullScreen ? (

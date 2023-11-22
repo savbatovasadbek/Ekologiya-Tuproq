@@ -1,5 +1,3 @@
-import "./App.css";
-
 import {
   Route,
   RouterProvider,
@@ -8,14 +6,22 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
-import Order from "./components/Order/Order";
+import Yerning_tuzilishi from "./components/Taqdimot/Yerning_tuzilishi/Yerning_tuzilishi";
+import { useTranslation } from "react-i18next";
+import { translationKey } from "./translation/translationKey/translationKey";
+import "./App.css";
 
 function App() {
+  const { t } = useTranslation();
+
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<Layout />}>
         <Route index element={<Home />}></Route>
-        <Route path="/order" element={<Order />}></Route>
+        <Route
+          path={`/${t(translationKey["Presentation"])}`}
+          element={<Yerning_tuzilishi />}
+        ></Route>
       </Route>
     )
   );

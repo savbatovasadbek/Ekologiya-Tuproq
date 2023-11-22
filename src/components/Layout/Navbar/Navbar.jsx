@@ -32,7 +32,7 @@ const Navbar = () => {
           {orderList?.map((link, idx) => {
             return (
               <div key={idx}>
-                <Link className="text-lg" to={link}>
+                <Link className="text-lg" to={`/${t(link)}`}>
                   {t(link)}
                 </Link>
               </div>
