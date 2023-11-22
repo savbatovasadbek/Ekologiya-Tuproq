@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" bg-transparent py-2 text-white border-b-2 border-white fixed top-0 left-0 w-full opacity-100 z-10">
+    <div className="py-2 text-white border-b-2 bg-black border-white fixed top-0 left-0 w-full opacity-100 z-10">
       <div className="container  flex items-center justify-between">
         <div className="">
           <NavLink to="/" className="w-[32px] h-[32px]">
@@ -32,7 +32,7 @@ const Navbar = () => {
           {orderList?.map((link, idx) => {
             return (
               <div key={idx}>
-                <Link className="text-lg" to={`/${t(link)}`}>
+                <Link className="text-lg" to={`/${link}`}>
                   {t(link)}
                 </Link>
               </div>
