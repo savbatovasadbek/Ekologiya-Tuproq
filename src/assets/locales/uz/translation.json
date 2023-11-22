@@ -7,5 +7,19 @@
   "Test": "Test",
   "Crossword": "Krassword",
   "Assignments": "Topshiriqlar",
-  "Start": "Boshlash"
+  "Start": "Boshlash",
+  "The structure of the earth": "Yerning tuzilishi",
+  "THE INNER CORE": "ICHKI YADRO",
+  " THE OUTER CORE": "TASHQI YADRO",
+  "MANTLE": "MANTIYA",
+  "THE LOWER MANTLE": "QUYI MANTIYA",
+  "THE UPPER MANTLE": "YUQORI MANTIYA",
+  "SHELL": "QOBIQ",
+  "The structure text1": "Yerning sayyorasi uchta asosiy qatlamdan tashkil topgan: Yer qobig`i, mantiya va yadro. Agar sayyorani tuxum bilan taqqoslasak, tuxum po`stlog`i - Yer qobig`i, oqi - mantiyani va sarig`i - yadroni ifodalaydi. Aytish joiz, mantiya va yadro ham bit necha qismlarga bo`linadi.",
+  "The structure text2": "Yer markazida qattiq ichki yadro joylashgan. Issiq va zich yadro  radiusi taxmiman 1221 km hamda undagi bosim 3.6 mln atmosferani tashkil qiladi. Ichki yadrodagi harorat Quyosh yuzasi kabi issiq (taxminan 5200 °C daraja), ya`ni temirni eritish uchun yetarlicha issiq.",
+  "The structure text3": "Yadroning bu qismi ham temir va nikeldan tashkil topgan, biroq suyuq holatda. U Yer yuzasidan 5180 km dan 2880 km gacha chuqurlikda joylashgan. Uran va toriy elementlarining radioaktiv parchalanishi natijasida isitiladigan bu suyuqlik katta va turbulent oqimlarga aylanadi. Bu harakat elektr tokini, ular esa, o`z navbatida, Yerning magnit maydonini hosil qiladi. Ba`zi tashqi yadro bilan bo`gliq bo`lgan sabablarga ko`ra, Yerning magnit maydoni har 200 000 - 300 000 yilda teskari tomonga o`zgaradi.",
+  "The structure text4": "Mantiya Yerning eng katta va eng qalin qatlami bo`lib, sayyora umumiy hajmining 84 foizini tashkil qiladi. Amntiya yana yuqori va quyi mantiyaga bo`lish mumkin. Mantiyaning harorati uning qobig`i bilan chegarasi yaqinida 1 000 °C dan, yadro  bilan chegarasi yaqinida 3 700 °C gacha farq qiladi.",
+  "The structure text5": "Quyi mantiya Yer yuzasi ostida taxminan 660 km dan 2 700 km gacha cho`zilgan. Quyi mantiya yuqori mantiya va o`tish zonasiga qaraganda issiqroq va zichroq.",
+  "The structure text6": "Yuqori mantiya qobiqdan 410 km chuqurlikka qadar kengaygan. Yuqoridan mantiya, asosan, qattiq, ammo uning moslashuvchan hududi tektonik faollikka yordam beradi.",
+  "The structure text7": "Yer qobig`i bu - biz yashaydigan qatlam. U qattiq qaynatilgan tuxum qobig`iga o`xshaydi. Qobiq boshqa 3 ta qatlamga nisbatan  juda nozik, uning qalinligi okeanlar ostida atigi 8 km (okean qobig`i) va materiklar ostida (materik qobig`i) taxminan 32 km bo`ladi. Yer qobig`ining harorati havo haroratidan qobiqning eng chuqur qismlarida taxminan 870 °C gacha farqlanadi."
 }

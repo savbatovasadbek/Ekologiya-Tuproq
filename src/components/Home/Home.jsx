@@ -1,19 +1,14 @@
 import { translationKey } from "../../translation/translationKey/translationKey";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import { useFullScreen } from "react-hooks-full-screen";
-import { AiOutlineFullscreenExit } from "react-icons/ai";
-import { RiFullscreenFill } from "react-icons/ri";
 
 import BgVideo from "../../assets/video/bg.mp4";
 
 import "./home.css";
 import { NavLink } from "react-router-dom";
+import FullScreen from "../constants/FullScreen/FullScreen";
 
 const Home = () => {
   const { t } = useTranslation();
-  const [showFullScreen, setShowFullScreen] = useState(false);
-  useFullScreen("app", showFullScreen);
 
   return (
     <div className="landingpage">
@@ -35,20 +30,11 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <NavLink
-        to={`/${t(translationKey["Presentation"])}`}
-        className="home-btn"
-      >
+      <NavLink to={`/Presentation`} className="home-btn">
         {t(translationKey["Start"])}
       </NavLink>
-      <div className="absolute right-10 bottom-5 flex items-center gap-10">
-        <button onClick={() => setShowFullScreen(!showFullScreen)}>
-          {!showFullScreen ? (
-            <RiFullscreenFill size="36" />
-          ) : (
-            <AiOutlineFullscreenExit size="36" />
-          )}
-        </button>
+      <div className="absolute right-10 bottom-5 flex items-center gap-10 max-sm:hidden">
+        <FullScreen size={36} />
       </div>
     </div>
   );

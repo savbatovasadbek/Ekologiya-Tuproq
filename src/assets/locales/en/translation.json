@@ -7,5 +7,19 @@
   "Test": "Test",
   "Crossword": "Crossword",
   "Assignments": "Assignments",
-  "Start": "Start"
+  "Start": "Start",
+  "The structure of the earth": "The structure of the earth",
+  "THE INNER CORE": "THE INNER CORE",
+  "THE OUTER CORE": "THE OUTER CORE",
+  "MANTLE": "MANTLE",
+  "THE LOWER MANTLE": "THE LOWER MANTLE",
+  "THE UPPER MANTLE": "THE UPPER MANTLE",
+  "SHELL": "SHELL",
+  "The structure text1": "The planet Earth is made up of three main layers: Earth's crust, mantle and core. If we compare the planet with an egg, the shell of the egg represents the Earth's crust, the white represents the mantle, and the yolk represents the core. It should be said that the mantle and the core are also divided into several parts.",
+  "The structure text2": "At the center of the Earth is the solid inner core. The radius of the hot and dense core is approximately 1221 km, and the pressure in it is 3.6 million atmospheres. The temperature in the inner core is as hot as the Sun's surface (about 5200 °C), hot enough to melt iron.",
+  "The structure text3": "This part of the core is also composed of iron and nickel, but in a liquid state. It is located at a depth of 5180 km to 2880 km below the Earth's surface. As a result of the radioactive decay of uranium and thorium elements, this heated liquid turns into large and turbulent flows. This movement creates an electric current, and they, in turn, create the Earth's magnetic field. For some reason related to the outer core, the Earth's magnetic field reverses every 200,000 to 300,000 years.",
+  "The structure text4": "Mantle is the largest and thickest layer of the Earth and makes up 84% of the total volume of the planet. Amntia can be further divided into upper and lower mantle. The temperature of the mantle varies from 1,000 °C near its boundary with the shell to 3,700 °C near the boundary with the core.",
+  "The structure text5": "The lower mantle extends from approximately 660 km to 2,700 km below the Earth's surface. The lower mantle is hotter and denser than the upper mantle and transition zone.",
+  "The structure text6": "The upper mantle extends from the crust to a depth of 410 km. Above, the mantle is mostly rigid, but its flexible region favors tectonic activity.",
+  "The structure text7": "The earth's crust is the layer in which we live. It looks like a hard-boiled egg shell. The crust is very thin compared to the other 3 layers, its thickness is only 8 km under the oceans (oceanic crust) and about 32 km under the continents (continental crust). The temperature of the Earth's crust differs from air temperature to about 870 °C in the deepest parts of the crust."
 }
