@@ -25,6 +25,14 @@ export function TabNavigation() {
         </TabsList>
         <TabsContent value="yerning-tuzilishi">
           <Yerning_tuzilishi />
+          <TabsList className="w-full flex items-center justify-center gap-5 bg-black">
+            <TabsTrigger
+              value="litosfera"
+              className="rounded-2xl px-6 bg-amber-500 text-black mb-[50px]"
+            >
+              Keyingisi
+            </TabsTrigger>
+          </TabsList>
         </TabsContent>
         <TabsContent value="litosfera">
           <Litosfera />
