@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
-import Yerning_tuzilishi from "./components/Taqdimot/Yerning_tuzilishi/Yerning_tuzilishi";
+import Yerning_tuzilishi from "./components/pages/Taqdimot/Yerning_tuzilishi/Yerning_tuzilishi";
 import "./App.css";
 
 function App() {

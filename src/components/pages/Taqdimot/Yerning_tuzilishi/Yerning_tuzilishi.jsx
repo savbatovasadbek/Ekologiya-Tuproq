@@ -1,11 +1,11 @@
-import the_internal_structure from "../../../assets/images/Yerning_tuzilishi/the_internal_structure.jpg";
-import ichki_yadro from "../../../assets/images/Yerning_tuzilishi/ichki_yadro.jpg";
-import tashqi_yadro from "../../../assets/images/Yerning_tuzilishi/tashqi_yadro.jpg";
-import mantiya from "../../../assets/images/Yerning_tuzilishi/mantiya.avif";
-import yuqori_mantiya from "../../../assets/images/Yerning_tuzilishi/yuqori_mantiya.jpg";
-import qobiq from "../../../assets/images/Yerning_tuzilishi/qobiq.jpg";
+import the_internal_structure from "../../../../assets/images/Yerning_tuzilishi/the_internal_structure.jpg";
+import ichki_yadro from "../../../../assets/images/Yerning_tuzilishi/ichki_yadro.jpg";
+import tashqi_yadro from "../../../../assets/images/Yerning_tuzilishi/tashqi_yadro.jpg";
+import mantiya from "../../../../assets/images/Yerning_tuzilishi/mantiya.avif";
+import yuqori_mantiya from "../../../../assets/images/Yerning_tuzilishi/yuqori_mantiya.jpg";
+import qobiq from "../../../../assets/images/Yerning_tuzilishi/qobiq.jpg";
 import { useTranslation } from "react-i18next";
-import { translationKey } from "../../../translation/translationKey/translationKey";
+import { translationKey } from "../../../../translation/translationKey/translationKey";
 
 const Yerning_tuzilishi = () => {
   const { t } = useTranslation();
