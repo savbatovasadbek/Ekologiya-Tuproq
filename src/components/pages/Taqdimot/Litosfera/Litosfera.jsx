@@ -213,8 +213,8 @@ const Litosfera = () => {
             olimlarga to`lqinlar o`tgan materialning tarkibi, harorati va bosimi
             haqida ko`p narsalarni aytib beradi.{" "}
           </p>
-          <div className="flex gap-6 mt-10">
-            <div className="">
+          <div className="flex justify-between mt-10">
+            <div className="w-[800px]">
               <p>
                 Seysmik to`lqinlar qattiq jinslar kabi zich moddalar bo`ylab
                 tezroq tarqaladi va suyuqliklarda sekinlashadi. Taxminan 60-90
@@ -227,11 +227,11 @@ const Litosfera = () => {
                 plitalar chegaralarida ko`proq uchraydi .
               </p>
             </div>
-            <div className="">
-              <div className="">
+            <div className="w-maxflex flex-col gap-4">
+              <div className="py-1 px-[80px] bg-[#3669C9] w-full text-center">
                 <h1>TEGISHLI HIKOYALAR:</h1>
               </div>
-              <div className="">
+              <div className="text-[14px] flex flex-col gap-3 my-4">
                 <a href="">- Yer qanday paydo bo`lgan?</a>
                 <a href="">- Yer qanchalik tez harakat qiladi?</a>
                 <a href="">- Yerga eng o`xshash 10 ta ekzosayyora </a>
@@ -245,7 +245,7 @@ const Litosfera = () => {
               <h1>LITOSFERA VA PLITALAR TEKTONIGI</h1>
             </div>
           </div>
-          <p>
+          <p className="mt-10 mb-10">
             ESA yordamida Yer litosferasi tomonidan yaratilgan mayda magnit
             signallarning eng batafsil xaritasini o`rganing . Amerika Qo`shma
             Shtatlari Geologik xizmatining ushbu ajoyib batafsil xaritasi bilan
