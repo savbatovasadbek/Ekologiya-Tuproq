@@ -1,6 +1,7 @@
 import listosfera_1 from "../../../../assets/images/Litosfera/listosfera_1.webp";
 import listosfera_2 from "../../../../assets/images/Litosfera/listosfera_2.png";
 import listosfera_3 from "../../../../assets/images/Litosfera/listosfera_3.jpg";
+import listosfera_4 from "../../../../assets/images/Litosfera/listosfera_4.jpg";
 
 const Litosfera = () => {
   return (
@@ -130,7 +131,7 @@ const Litosfera = () => {
             ulkan tog` tizmasi 40-50 million yil oldin Hindiston va Evrosiyo
             plitalari to`qnashganda paydo bo`lgan .
           </p>
-          <div className="">
+          <div className="flex justify-between ">
             <div className="">
               <p>
                 Milliy okean va atmosfera ma`muriyati (NOAA) ma`lumotlariga
@@ -149,8 +150,95 @@ const Litosfera = () => {
                 harakatlanuvchi o`yinini o`ynamoqda.
               </p>
             </div>
+            <div className="">
+              <div className="">
+                <h1>BILASIZMI?</h1>
+              </div>
+              <p>
+                San-Andreas yoriq chizig`i bo`ylab harakat har yili
+                Los-Anjelesni San-Frantsiskoga 1,8 dyuym (4,6 sm)
+                yaqinlashtiradi?
+              </p>
+            </div>
+          </div>
+          <div className="">
+            <img
+              src={listosfera_4}
+              alt="Turli xil zichlikdagi ikkita plastinka to'qnashganda plitalar tektonikasi va subduktsiyaning tasviri. (Rasm krediti: CHRISTOPH BURGSTEDT/SCIENCE FOTO KUTUBXONASI Getty Images orqali)"
+            />
+            <p>
+              Turli xil zichlikdagi ikkita plastinka to`qnashganda plitalar
+              tektonikasi va subduktsiyaning tasviri. (Rasm krediti: CHRISTOPH
+              BURGSTEDT/SCIENCE FOTO KUTUBXONASI Getty Images orqali)
+            </p>
             <div className=""></div>
           </div>
+        </div>
+        <div className="">
+          <div className="w-full border-b border-b-[#3669C9] flex items-center justify-center">
+            <div className="py-1 px-[80px] bg-[#3669C9]">
+              <h1>LITOSFERA VA PLITALAR TEKTONIGI</h1>
+            </div>
+          </div>
+          <p>
+            Biz litosferaning mavjudligini bilamiz, chunki u biz yashayotgan
+            joyda va ajoyib vulqonlar va baland tog` tizmalari orqali plastinka
+            tektonikasining bevosita ta`sirini ko`rishimiz mumkin. Ammo yer
+            ostida nima bo`layotganini qanday bilamiz?
+          </p>
+          <p>
+            Zilzilalar va seysmik to`lqinlar bizga Yerning ichki qismi,
+            jumladan, litosfera va astenosfera joylashgan joy haqida ko`p
+            narsalarni aytib berishi mumkin.{" "}
+          </p>
+          <p>
+            Kolumbiya universiteti ma`lumotlariga ko`ra, zilzila paytida
+            birlamchi (P) va ikkilamchi (S) to`lqinlar Yerning ichki qismiga
+            tarqaladi . Dunyo bo`ylab joylashgan maxsus stantsiyalar bu
+            to`lqinlarni aniqlaydi va ularning tezligini qayd etadi, bu esa
+            olimlarga to`lqinlar o`tgan materialning tarkibi, harorati va bosimi
+            haqida ko`p narsalarni aytib beradi.{" "}
+          </p>
+          <div className="">
+            <div className="">
+              <p>
+                Seysmik to`lqinlar qattiq jinslar kabi zich moddalar bo`ylab
+                tezroq tarqaladi va suyuqliklarda sekinlashadi. Taxminan 60-90
+                milya (100-250 km) chuqurlikda seysmik to`lqinlar sekinlasha
+                boshlaydi, bu ularning qisman erigan (taxminan 1%) zonasiga -
+                astenosferaga kirganligini ko`rsatadi. Seysmik past tezlik
+                zonasi - astenosferadagi jinslar haroratning oshishi yoki
+                bosimning pasayishi tufayli qisman eriydi. Geologiya jamiyati
+                ma`lumotlariga ko`ra, bunday qisman erish issiq nuqtalarda va
+                plitalar chegaralarida ko`proq uchraydi .
+              </p>
+            </div>
+            <div className="">
+              <div className="">
+                <h1>TEGISHLI HIKOYALAR:</h1>
+              </div>
+              <div className="">
+                <a href="">- Yer qanday paydo bo`lgan?</a>
+                <a href="">- Yer qanchalik tez harakat qiladi?</a>
+                <a href="">- Yerga eng o`xshash 10 ta ekzosayyora </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="w-full border-b border-b-[#3669C9] flex items-center justify-center">
+            <div className="py-1 px-[80px] bg-[#3669C9]">
+              <h1>LITOSFERA VA PLITALAR TEKTONIGI</h1>
+            </div>
+          </div>
+          <p>
+            ESA yordamida Yer litosferasi tomonidan yaratilgan mayda magnit
+            signallarning eng batafsil xaritasini o`rganing . Amerika Qo`shma
+            Shtatlari Geologik xizmatining ushbu ajoyib batafsil xaritasi bilan
+            dunyodagi vulqonlar, zilzilalar, zarba kraterlari va plitalar
+            tektonikasini kezing . Ochiq universitet bilan yer yuzasi ostida
+            nima borligini ko`rib chiqing va Yerning ichki makonini bilib oling.
+          </p>
         </div>
       </div>
     </div>
