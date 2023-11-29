@@ -162,7 +162,7 @@ const Navbar = () => {
                       </Button>
                     </div>
                     <div className="">
-                      <FullScreen size={28} />
+                      <FullScreen size={"28px"} />
                     </div>
                     <div className="h-[100vh]">
                       <img

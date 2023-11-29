@@ -6,15 +6,17 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
-import Yerning_tuzilishi from "./components/pages/Taqdimot/Yerning_tuzilishi/Yerning_tuzilishi";
 import "./App.css";
+import { TabNavigation } from "./components/pages/Taqdimot/TabNavigation";
+import ErrorPage from "./components/pages/Error/error";
 
 function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<Layout />}>
         <Route index element={<Home />}></Route>
-        <Route path={`/Presentation`} element={<Yerning_tuzilishi />}></Route>
+        <Route path={`/Presentation`} element={<TabNavigation />}></Route>
+        <Route path="*" element={<ErrorPage />}></Route>
       </Route>
     )
   );
