@@ -8,41 +8,49 @@ const Litosfera = () => {
     <div className="bg-black">
       <div className="container text-white flex flex-col gap-8 py-5">
         <div className="">
-          <h1 className="text-center text-4xl">
+          <h1 className="text-[50px] drop-shadow-[3px_3px_0_white] tracking-[20px] text-center max-sm:text-[18px] max-sm:drop-shadow-[1px_1px_0_white] max-sm:tracking-[15px]">
             Litosfera: Yerning tashqi qobig`i haqida faktlar
           </h1>
         </div>
 
+        <div className="mt-10">
+          <p className="">
+            ``Litosfera - biz uy deb ataydigan Yer qatlami ...``
+          </p>
+        </div>
+
         <div className="">
-          <p>Litosfera - biz uy deb ataydigan Yer qatlami.</p>
-          <div className="">
+          <div className="flex flex-col mt-10">
             <img
               src={listosfera_1}
+              className="w-[80%] mx-auto my-0"
               alt="Litosfera Yerning eng tashqi qatlami bo`lib, tektonik plitalar deb
               ataladigan bo`laklarga bo`linadi. (Rasm krediti: johan63 Getty
               Images orqali)"
               loading="lazy"
             />
-            <p>
+            <p className="text-[14px] text-center">
               Litosfera Yerning eng tashqi qatlami bo`lib, tektonik plitalar deb
               ataladigan bo`laklarga bo`linadi. (Rasm krediti: johan63 Getty
               Images orqali)
             </p>
           </div>
+          <div className="">
+            <p>
+              Litosfera Yerning eng tashqi qatlami bo`lib , qobiq va yuqori
+              mantiyaning mo`rt qismidan iborat. Litosfera atamasi yunoncha
+              ``lito`` tosh degan ma`noni anglatadi va ``sphaira`` globus yoki
+              to`p degan ma`noni anglatadi.
+            </p>
+            <p>
+              The Geological Society ma`lumotlariga ko`ra, yuqoridagi atmosfera
+              va pastdagi astenosfera o`rtasida joylashgan litosfera 190 milya
+              (300 kilometr) chuqurlikka yetishi mumkin .
+            </p>
+          </div>
         </div>
 
         <div className="">
-          <p>
-            Litosfera Yerning eng tashqi qatlami bo`lib , qobiq va yuqori
-            mantiyaning mo`rt qismidan iborat. Litosfera atamasi yunoncha
-            ``lito`` tosh degan ma`noni anglatadi va ``sphaira`` globus yoki
-            to`p degan ma`noni anglatadi.
-          </p>
-          <p>
-            The Geological Society ma`lumotlariga ko`ra, yuqoridagi atmosfera va
-            pastdagi astenosfera o`rtasida joylashgan litosfera 190 milya (300
-            kilometr) chuqurlikka yetishi mumkin .
-          </p>
           <p>
             Litosfera-astenosfera chegarasida — harorat 2400 daraja Farengeytga
             (1300 daraja Selsiy) yetganda — jinslar juda sekin bo`lsa-da,
@@ -60,10 +68,9 @@ const Litosfera = () => {
             tektonik plitalar deb ataladigan bir nechta katta qismlarga
             bo`linishiga olib keldi.
           </p>
-        </div>
-
-        <div className="">
-          <img src={listosfera_2} alt="Litosfera" loading="lazy" />
+          <div className="">
+            <img src={listosfera_2} alt="Litosfera" loading="lazy" />
+          </div>
         </div>
 
         <div className="">

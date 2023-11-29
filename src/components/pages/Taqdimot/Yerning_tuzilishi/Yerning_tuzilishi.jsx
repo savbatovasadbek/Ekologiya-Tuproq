@@ -11,7 +11,7 @@ const Yerning_tuzilishi = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-black w-full pt-[100px] text-white">
+    <div className="bg-black w-full text-white">
       <div className="container bg-black">
         <div className="flex items-center flex-col justify-center gap-14 pb-24 max-sm:gap-8">
           <div className="flex items-center flex-col justify-center">
