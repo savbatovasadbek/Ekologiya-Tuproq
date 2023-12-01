@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import "./App.css";
 import { TabNavigation } from "./components/pages/Taqdimot/TabNavigation";
 import ErrorPage from "./components/pages/Error/error";
+import Quiz from "./components/pages/Test/Quiz";
 
 function App() {
   const routes = createBrowserRouter(
@@ -16,6 +17,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />}></Route>
         <Route path={`/Presentation`} element={<TabNavigation />}></Route>
+        <Route path={`/Test`} element={<Quiz />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Route>
     )
