@@ -41,4 +41,25 @@ export const QuizData = [
       },
     ],
   },
+  {
+    id: "question_3",
+    question: "Beauty is?",
+    answers: [
+      {
+        id: "answer_1",
+        answer: "Life",
+        correct: true,
+      },
+      {
+        id: "answer_2",
+        answer: "Flower",
+        correct: false,
+      },
+      {
+        id: "answer_3",
+        answer: "Sweety",
+        correct: false,
+      },
+    ],
+  },
 ];

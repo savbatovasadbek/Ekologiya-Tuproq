@@ -1,7 +1,18 @@
+import { useState } from "react";
+import { QuizData } from "./QuizData";
+import Start from "./Start/Start";
+import ShowQuiz from "./ShowQuiz/ShowQuiz";
+
 const Quiz = () => {
+  console.log(QuizData);
+  const [start, setStart] = useState(false);
+  const [finish, setFinish] = useState(false);
   return (
-    <div>
-      <h1>You are welcome to test Quiz App</h1>
+    <div className="pt-[80px] bg-cyan-950 h-[100vh] w-[100%] flex items-center justify-center">
+      <div className="container text-white text-center">
+        {!start && <Start setStart={setStart} />}
+        {start && <ShowQuiz />}
+      </div>
     </div>
   );
 };
