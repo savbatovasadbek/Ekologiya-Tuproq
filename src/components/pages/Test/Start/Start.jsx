@@ -7,7 +7,7 @@ const Start = ({ setStart }) => {
   return (
     <div className="flex flex-col gap-3 text-center">
       <div className="">
-        <h1 className="text-[60px]">
+        <h1 className="text-[60px] max-sm:text-[40px]">
           Tuproq mazusidan test yechishga <br /> hush kelibsiz!
         </h1>
       </div>

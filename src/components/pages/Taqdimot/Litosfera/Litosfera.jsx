@@ -6,9 +6,9 @@ import listosfera_4 from "../../../../assets/images/Litosfera/listosfera_4.jpg";
 const Litosfera = () => {
   return (
     <div className="bg-black  indent-[30px] leading-8">
-      <div className="container text-white flex flex-col gap-8 py-5">
+      <div className="container text-white flex flex-col gap-8 py-5 max-sm:gap-4">
         <div className="">
-          <h1 className="text-[50px] drop-shadow-[3px_3px_0_white] tracking-[20px] text-center max-sm:text-[18px] max-sm:drop-shadow-[1px_1px_0_white] max-sm:tracking-[15px] leading-[80px]">
+          <h1 className="text-[50px] drop-shadow-[3px_3px_0_white] tracking-[20px] text-center max-sm:text-[18px] max-sm:drop-shadow-[1px_1px_0_white] max-sm:tracking-[5px] leading-[80px] max-sm:leading-8">
             Litosfera: Yerning tashqi qobig`i haqida faktlar
           </h1>
         </div>
@@ -146,8 +146,8 @@ const Litosfera = () => {
             ulkan tog` tizmasi 40-50 million yil oldin Hindiston va Evrosiyo
             plitalari to`qnashganda paydo bo`lgan .
           </p>
-          <div className="flex gap-10 my-10">
-            <div className="w-[1200px]">
+          <div className="flex gap-10 my-10 max-sm:flex-col">
+            <div className="w-[1200px] max-sm:w-full">
               <p>
                 Milliy okean va atmosfera ma`muriyati (NOAA) ma`lumotlariga
                 ko`ra , O`rta Atlantika tizmasi kabi yirik okean tizmalari
@@ -165,7 +165,7 @@ const Litosfera = () => {
                 harakatlanuvchi o`yinini o`ynamoqda.
               </p>
             </div>
-            <div className="w-[600px] flex flex-col gap-4">
+            <div className="w-[600px] flex flex-col gap-4 max-sm:w-full">
               <div className="py-1 px-[80px] bg-[#3669C9] w-full text-center">
                 <h1>BILASIZMI?</h1>
               </div>
@@ -213,8 +213,8 @@ const Litosfera = () => {
             olimlarga to`lqinlar o`tgan materialning tarkibi, harorati va bosimi
             haqida ko`p narsalarni aytib beradi.{" "}
           </p>
-          <div className="flex justify-between mt-10">
-            <div className="w-[800px]">
+          <div className="flex justify-between mt-10 max-sm:flex-col">
+            <div className="w-[800px] max-sm:w-full">
               <p>
                 Seysmik to`lqinlar qattiq jinslar kabi zich moddalar bo`ylab
                 tezroq tarqaladi va suyuqliklarda sekinlashadi. Taxminan 60-90

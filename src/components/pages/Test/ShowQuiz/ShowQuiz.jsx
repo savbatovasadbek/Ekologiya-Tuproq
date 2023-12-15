@@ -10,10 +10,10 @@ const ShowQuiz = () => {
   };
   return (
     <div className="flex flex-col">
-      <div className="mb-[40px] text-[30px] text-white">
+      <div className="mb-[30px] text-[30px] text-white max-sm:text-[24px]">
         <h1>Ekologiya fanidan Tuproq mavzusida testlar</h1>
       </div>
-      <div className="bg-white flex flex-col gap-3 p-[30px_20px] w-[600px] m-[0_auto] text-black">
+      <div className="bg-white flex flex-col gap-3 p-[30px_20px] w-[600px] m-[0_auto] text-black max-sm:w-full">
         <div className="text-left border-b-2 p-[5px_0] text-[20px]">
           <h1>1/10 How are you?</h1>
         </div>
@@ -120,7 +120,7 @@ const ShowQuiz = () => {
         </div>
       </div>
       {chooseAnswer && (
-        <div className="bg-[#84f384] p-[10px_20px] text-left indent-5 text-[#069906] w-[600px] m-[0_auto]">
+        <div className="bg-[#84f384] p-[10px_20px] text-left indent-5 text-[#069906] w-[600px] m-[0_auto] max-sm:w-full">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
             excepturi facere, incidunt exercitationem nisi harum, iste quibusdam
