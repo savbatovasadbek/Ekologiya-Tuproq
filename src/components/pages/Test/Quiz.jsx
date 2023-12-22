@@ -6,7 +6,6 @@ import ShowQuiz from "./ShowQuiz/ShowQuiz";
 const Quiz = () => {
   console.log(QuizData);
   const [start, setStart] = useState(false);
-  const [finish, setFinish] = useState(false);
   return (
     <div className="pt-[80px] bg-cyan-950 h-[100vh] w-[100%] flex items-center justify-center">
       <div className="container text-white text-center">

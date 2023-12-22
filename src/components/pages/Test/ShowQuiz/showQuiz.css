@@ -1,0 +1,84 @@
+.test-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-align: left;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #e6e6e6;
+}
+
+.correct {
+  background-color: #8eff8e;
+}
+
+.incorrect {
+  background-color: #ff8e8e;
+}
+
+.timer {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.testResult {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nextBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.restartBtn {
+  background-color: darkorange;
+  margin-right: 20px;
+}
+
+.showResultBtn {
+  background-color: darkmagenta;
+}
+
+.nextBtn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.mistake {
+  margin: 15px 0;
+  background-color: transparent;
+  /* background-color: #4caf50; */
+  padding: 10px 20px;
+}
+
+.correctResults {
+  overflow-y: scroll;
+  max-height: 400px;
+}

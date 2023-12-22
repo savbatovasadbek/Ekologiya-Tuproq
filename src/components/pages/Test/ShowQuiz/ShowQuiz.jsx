@@ -1,136 +1,165 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "./showQuiz.css"; // Import your CSS file for styling
 
-const ShowQuiz = () => {
-  const [chooseAnswer, setChooseAnswer] = useState(false);
-  const [answerNumber, setAnswerNumber] = useState(0);
+import { QuizData as questions } from "../QuizData";
 
-  const onChooseHandler = (num) => {
-    setChooseAnswer(true);
-    setAnswerNumber(num);
+const TestGenerator = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [timer, setTimer] = useState(10);
+  const [canLoadNextQuestion, setCanLoadNextQuestion] = useState(false);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+  const [showMistakes, setShowMistakes] = useState(false);
+
+  useEffect(() => {
+    if (timer > 0) {
+      const interval = setInterval(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+      }, 1000);
+
+      return () => clearInterval(interval);
+    } else {
+      // Enable loading the next question when the timer reaches 0
+      setCanLoadNextQuestion(true);
+    }
+  }, [timer]);
+
+  const handleOptionSelect = (selected) => {
+    // Check if the selected option is correct
+    const correctAnswer = questions[currentQuestion].correctAnswer;
+    const isAnswerCorrect = selected === correctAnswer;
+
+    // Update state to show correct or incorrect feedback
+    setSelectedOption(selected);
+    setIsCorrect(isAnswerCorrect);
+
+    // Increment the correct answers count
+    if (isAnswerCorrect) {
+      setCorrectAnswers((prevCorrectAnswers) => prevCorrectAnswers + 1);
+    }
+
+    // Stop the timer when an option is selected
+    setTimer(0);
   };
+
+  const handleNextQuestion = () => {
+    // Load the next question only if the "Next" button is enabled
+    if (canLoadNextQuestion) {
+      // Move to the next question
+      if (currentQuestion < questions.length - 1) {
+        setCurrentQuestion(currentQuestion + 1);
+        setTimer(10);
+        setSelectedOption(null);
+        setIsCorrect(null);
+        setCanLoadNextQuestion(false); // Disable loading the next question
+      } else {
+        // End of the test
+        setShowResult(true);
+      }
+    }
+  };
+
+  const handleRestart = () => {
+    // Reset all state values to restart the test
+    setCurrentQuestion(0);
+    setSelectedOption(null);
+    setIsCorrect(null);
+    setTimer(10);
+    setCanLoadNextQuestion(false);
+    setCorrectAnswers(0);
+    setShowResult(false);
+    setShowMistakes(false);
+
+    // Reset selected options for each question
+    const resetQuestions = questions.map((q) => ({
+      ...q,
+      selectedOption: null,
+    }));
+    setQuestions(resetQuestions);
+  };
+
+  const handleShowMistakes = () => {
+    // Display mistakes
+    setShowMistakes(true);
+  };
+
   return (
-    <div className="flex flex-col">
-      <div className="mb-[30px] text-[30px] text-white max-sm:text-[24px]">
-        <h1>Ekologiya fanidan Tuproq mavzusida testlar</h1>
-      </div>
-      <div className="bg-white flex flex-col gap-3 p-[30px_20px] w-[600px] m-[0_auto] text-black max-sm:w-full">
-        <div className="text-left border-b-2 p-[5px_0] text-[20px]">
-          <h1>1/10 How are you?</h1>
-        </div>
-        <div className="w-full flex flex-col gap-2">
-          {/* ======================================== */}
-
-          <div
-            onClick={() => onChooseHandler(1)}
-            className={`w-full text-left cursor-pointer p-[5px] relative ${
-              chooseAnswer && true ? "bg-[#84f384]" : "hover:bg-slate-300"
-            } ${
-              answerNumber == 1 ? (true ? "bg-[#84f384]" : "bg-red-400") : ""
-            }`}
-          >
-            <p>Ok</p>
-            {chooseAnswer ? (
-              true ? (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%] ">
-                  ✅
-                </p>
-              ) : (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%]">
-                  ❌
-                </p>
-              )
-            ) : (
-              ""
-            )}
-          </div>
-
-          <div
-            onClick={() => onChooseHandler(2)}
-            className={`w-full text-left cursor-pointer p-[5px] relative ${
-              chooseAnswer ? "" : "hover:bg-slate-300"
-            } ${
-              answerNumber == 2 ? (false ? "bg-[#84f384]" : "bg-red-400") : ""
-            }`}
-          >
-            <p>Well</p>
-            {chooseAnswer && answerNumber == 2 ? (
-              false ? (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%] ">
-                  ✅
-                </p>
-              ) : (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%]">
-                  ❌
-                </p>
-              )
-            ) : (
-              ""
-            )}
-          </div>
-
-          <div
-            onClick={() => onChooseHandler(3)}
-            className={`w-full text-left cursor-pointer p-[5px] relative ${
-              chooseAnswer ? "" : "hover:bg-slate-300"
-            } ${
-              answerNumber == 3 ? (false ? "bg-[#84f384]" : "bg-red-400") : ""
-            }`}
-          >
-            <p>Nice</p>
-            {chooseAnswer && answerNumber == 3 ? (
-              false ? (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%] ">
-                  ✅
-                </p>
-              ) : (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%]">
-                  ❌
-                </p>
-              )
-            ) : (
-              ""
-            )}
-          </div>
-
-          <div
-            onClick={() => onChooseHandler(4)}
-            className={`w-full text-left cursor-pointer p-[5px] relative ${
-              chooseAnswer ? "" : "hover:bg-slate-300"
-            } ${
-              answerNumber == 4 ? (false ? "bg-[#84f384]" : "bg-red-400") : ""
-            }`}
-          >
-            <p>Good</p>
-            {chooseAnswer && answerNumber == 4 ? (
-              false ? (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%] ">
-                  ✅
-                </p>
-              ) : (
-                <p className="absolute top-[50%] right-4 translate-y-[-50%]">
-                  ❌
-                </p>
-              )
-            ) : (
-              ""
-            )}
-          </div>
-
-          {/* ==================================== */}
-        </div>
-      </div>
-      {chooseAnswer && (
-        <div className="bg-[#84f384] p-[10px_20px] text-left indent-5 text-[#069906] w-[600px] m-[0_auto] max-sm:w-full">
+    <div className="test-container">
+      {showResult ? (
+        <div className="testResult">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
-            excepturi facere, incidunt exercitationem nisi harum, iste quibusdam
-            dignissimos molestiae deserunt quas, ab vel commodi tempore itaque
-            sint deleniti! Id, ab.
+            Test completed! Your result:{" "}
+            {((correctAnswers / questions.length) * 100).toFixed(2)}%
           </p>
+          <button className="nextBtn restartBtn" onClick={handleRestart}>
+            Restart
+          </button>
+          <button
+            className="nextBtn showResultBtn"
+            onClick={handleShowMistakes}
+          >
+            Show correct answers
+          </button>
+        </div>
+      ) : (
+        <div>
+          <p>{questions[currentQuestion].question}</p>
+          <div className="options-container">
+            {questions[currentQuestion].options.map((option, index) => (
+              <div
+                key={index}
+                onClick={() => handleOptionSelect(option)}
+                className={`option ${
+                  selectedOption === option
+                    ? isCorrect
+                      ? "correct"
+                      : "incorrect"
+                    : ""
+                }`}
+              >
+                {option}
+              </div>
+            ))}
+          </div>
+          <div className="timer">Time left: {timer}s</div>
+          <button
+            className="nextBtn"
+            onClick={handleNextQuestion}
+            disabled={!canLoadNextQuestion}
+          >
+            Next
+          </button>
+        </div>
+      )}
+
+      {showMistakes && (
+        <div className="correctResults">
+          {questions.map((q, index) => (
+            <div
+              key={index}
+              className={`mistake ${
+                q.correctAnswer !== q.selectedOption ? "incorrect" : ""
+              }`}
+            >
+              <h1>
+                {index + 1}. {q.question}
+              </h1>
+              <p
+                style={{
+                  color: "green",
+                  paddingLeft: "20px",
+                }}
+              >
+                Correct Answer: {q.correctAnswer}
+              </p>
+            </div>
+          ))}
         </div>
       )}
     </div>
   );
 };
 
-export default ShowQuiz;
+export default TestGenerator;
