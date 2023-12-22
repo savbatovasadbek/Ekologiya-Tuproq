@@ -1,65 +1,12 @@
 export const QuizData = [
   {
-    id: "question_1",
-    question: "Do you know who am I ...",
-    answers: [
-      {
-        id: "answer_1",
-        answer: "I am a student",
-        correct: true,
-      },
-      {
-        id: "answer_2",
-        answer: "I am a doctor",
-        correct: false,
-      },
-      {
-        id: "answer_3",
-        answer: "I am a teacher",
-        correct: false,
-      },
-    ],
+    question: "What is the capital of France?",
+    options: ["Berlin", "Madrid", "Paris", "Rome"],
+    correctAnswer: "Paris",
   },
   {
-    id: "question_2",
-    question: "Did know about that ...",
-    answers: [
-      {
-        id: "answer_1",
-        answer: "Yes",
-        correct: false,
-      },
-      {
-        id: "answer_2",
-        answer: "No",
-        correct: true,
-      },
-      {
-        id: "answer_3",
-        answer: "Probably",
-        correct: false,
-      },
-    ],
-  },
-  {
-    id: "question_3",
-    question: "Beauty is?",
-    answers: [
-      {
-        id: "answer_1",
-        answer: "Life",
-        correct: true,
-      },
-      {
-        id: "answer_2",
-        answer: "Flower",
-        correct: false,
-      },
-      {
-        id: "answer_3",
-        answer: "Sweety",
-        correct: false,
-      },
-    ],
+    question: "Which planet is known as the Red Planet?",
+    options: ["Mars", "Venus", "Jupiter", "Saturn"],
+    correctAnswer: "Mars",
   },
 ];
